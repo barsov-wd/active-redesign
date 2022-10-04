@@ -1,0 +1,87 @@
+.stages {
+    padding-top: 130px;
+    padding-bottom: 120px;
+    background-color: #EAECEE;
+    &__title {
+        text-align: center;
+        margin-bottom: 164px;
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 130px;
+    }
+    &__item {
+        position: relative;
+        width: 520px;
+        min-height: 180px;
+        padding: 41px 38px 25px 38px;
+        background: #FFFFFF;
+        border: 2px solid #FFDD2D;
+        border-radius: 20px;
+        text-align: center;
+    }
+    &__item-block {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: -94px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #9299A2;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        width: 115px;
+        height: 115px;
+    }
+    &__item-block-number {
+        font-family: 'Gilroy Black', sans-serif;
+        font-size: 78px;
+        line-height: 86px;
+        color: #FFDD2D;
+    }
+    &__item-title {
+        font-family: 'Gilroy Black', sans-serif;
+        font-size: 25px;
+        line-height: 31px;
+        margin-bottom: 20px;
+    }
+    &__item-descr {
+        font-size: 18px;
+        line-height: 21px;
+    }
+    &__block {
+        position: relative;
+        padding: 143px 145px;
+        background: #fff url('../img/stages/stages-bg.png') top no-repeat;
+        width: 1370px;
+        border-radius: 20px;
+        margin: 0 auto;
+    }
+    &__block-image {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    &__block-title {
+        color: #FFDD2D;
+        margin-bottom: 10px;
+    }
+    &__block-descr {
+        width: 618px;
+        font-size: 30px;
+        line-height: 35px;
+        color: #212121;
+        margin-bottom: 40px;
+    }
+    &__block-button {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        width: 250px;
+        height: 60px;
+    }
+    &__image-mobile {
+        display: none;
+    }
+}

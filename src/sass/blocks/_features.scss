@@ -1,0 +1,49 @@
+.features {
+    padding-top: 130px;
+    &__title {
+        margin-bottom: 15px;
+    }
+    &__subtitle {
+        width: 518px;
+        font-size: 30px;
+        line-height: 35px;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__items {
+        display: flex;
+    }
+    &__item {
+        padding: 17px 18px 25px 17px;
+        width: 284px;
+        height: 295px;
+        background: #EAECEE;
+        border: 2px solid #FFDD2D;
+        border-radius: 20px;
+        margin-right: 20px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__item-image {
+        margin-bottom: 17px;
+    }
+    &__item-title {
+        font-family: 'Gilroy Black', sans-serif;
+        font-size: 18px;
+        line-height: 22px;
+        color: #000;
+        margin-bottom: 60px;
+        &--thrid {
+            margin-bottom: 38px;
+        }
+    }
+    &__item-descr {
+        font-size: 16px;
+        line-height: 19px;
+        color: #000;
+    }
+}

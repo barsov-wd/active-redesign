@@ -1,0 +1,224 @@
+.calc {
+    padding-top: 130px;
+}
+.calc input {
+    width: 100%;
+    display: block;
+}
+.calc__row {
+    position: relative;
+    padding: 79px 115px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap !important;
+}
+.calc__image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.calc__container {
+    background: url('../img/calc/calc-bg.png') center (center / cover ) no-repeat;
+    // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+.calc__box {
+    min-height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.calc__box--left {
+    width: 560px;
+}
+.calc__input-row {
+    display: flex;
+    justify-content: space-between;
+}
+.calc__input-text {
+    color: #5C636B;
+    font-size: 16px;
+}
+.calc__description {
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(#000, .5);
+    max-width: 510px;
+}
+.calc__title {
+    font-family: 'Gilroy Black', sans-serif;
+    font-size: 36px;
+    line-height: 45px;
+    margin-bottom: 50px;
+}
+.calc__input-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+.calc__input {
+    padding: 10px 20px;
+    padding-left: 66%;
+    padding-right: 50px;
+    font-family: 'Gilroy Medium', sans-serif;
+    font-size: 20px;
+    line-height: 34px;
+    border: 1px solid #9299A2;
+    border-radius: 9px;
+}
+.calc__input--time {
+    padding-left: 82%;
+}
+.calc__input--range {
+    cursor: pointer;
+}
+.calc-offer {
+    width: 405px;
+    margin-left: 115px;
+}
+.calc-offer__title {
+    margin-bottom: 50px;
+}
+.calc-offer__text {
+    font-family: 'Gilroy Medium', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+}
+.calc-offer__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #FFDD2D;
+    border-radius: 9px;
+    padding: 10px 20px;
+    margin-bottom: 35px;
+}
+.calc-offer__rate {
+    margin-bottom: 35px;
+}
+.calc__pt {
+    font-family: 'Gilroy Black', sans-serif;
+    font-size: 36px;
+    line-height: 45px;
+}
+.calc__button {
+    width: 250px;
+    height: 60px;
+}
+.calc-offer__rate-number {
+    font-family: 'Gilroy Black', sans-serif;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000;
+    margin-bottom: 5px;
+}
+.calc__input-text-left {
+    position: absolute;
+    top: 20%;
+    left: 20px;
+    font-size: 20px;
+    line-height: 24px;
+}
+.calc__input-text-left label {
+    font-family: 'Gilroy Medium', sans-serif !important;
+}
+.calc__input-text-right {
+    top: 20%;
+    right: 20px;
+    position: absolute;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+
+/* range */
+
+.kviz__ansver {
+    margin-bottom: 10px;
+}
+.range-box {
+    width: 100%;
+}
+
+.range {
+    position: relative;
+    height: 2px;
+    background: #f2f2f2;
+}
+
+.range__input::-webkit-slider-thumb {
+    width: 22px;
+    height: 22px;
+}
+
+.range__input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 300px;
+    position: absolute;
+    z-index: 5;
+    background: none;
+    opacity: 0;
+    cursor: pointer;
+    height: 40px;
+    left: 0px;
+    top: -20px;
+    line-height: 40px;
+}
+
+.range__track {
+    position: absolute;
+    height: 100%;
+    background: #FFDD2D;
+    display: block;
+    z-index: 2;
+}
+
+.range__track:after {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    content: '';
+    right: 0px;
+    top: 50%;
+    transform: translate(-100%, -50%);
+    cursor: pointer;
+    z-index: 6;
+    background: #FFDD2D;;
+    border-radius: 50%;
+    background-color: #FFDD2D;;
+    box-shadow: 0px 0px 7.84px 0.16px rgba(0, 0, 0, 0.2);
+    margin-right: -10px;
+}
+.range__track--time:after {
+    transform: translate(-50%, -50%);
+}
+
+.range-val {
+    color: #333333;
+    position: absolute;
+    right: 0;
+    margin-right: -50px;
+    bottom: -30px;
+    background-color: #fff;
+    font-size: 16px;
+    width: 100px;
+    text-align: center;
+}
+
+.min_val_range {
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    color: #aaaaaa;
+    font-size: 16px;
+}
+
+.max_val_range {
+    position: absolute;
+    right: 0;
+    color: #aaaaaa;
+    bottom: -30px;
+    font-size: 16px;
+}

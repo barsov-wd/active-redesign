@@ -1,0 +1,55 @@
+.credit-registration {
+    padding-top: 176px;
+    &__container {
+        position: relative;
+    }
+    &__image {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    &__title {
+        width: 432px;
+        margin-bottom: 80px;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        width: 900px;
+        padding-bottom: 176px;
+    }
+    &__menu-item {
+        position: relative;
+        padding-left: 28px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000;
+        &:last-child {
+            margin-bottom: 0;
+            &::before {
+                display: none;
+            }
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 8px;
+            height: 8px;
+            background-color: #FFDD2D;
+            border-radius: 100%;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: #9299A2;
+            width: 385px;
+            height: 1px;
+        }
+    }
+}

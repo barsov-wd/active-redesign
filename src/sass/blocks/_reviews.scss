@@ -1,0 +1,82 @@
+.reviews {
+    padding-top: 130px;
+    padding-bottom: 154px;
+    &__title {
+        margin-bottom: 53px;
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item {
+        background: url('../img/reviews/reviews-item-bg.png') top no-repeat;
+        width: 283px;
+        height: 401px;
+        padding: 25px 15px 0 15px;
+    }
+    &__item-name {
+        font-family: 'Gilroy Black', sans-serif;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 5px;
+    }
+    &__item-date {
+        font-size: 16px;
+        line-height: 19px;
+        color: #9299A2;
+        margin-bottom: 19px;
+    }
+    &__dots {
+        &__wrap {
+            display: flex;
+        }
+    }
+    &__dot {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: #C4C4C4;
+        margin: 0 8px;
+        transition: 0.3s;
+        &--active {
+            width: 40px;
+            background-color: #FFDD2D;;
+            border-radius: 12px;
+        }
+    }
+    &__arrow {
+        cursor: pointer;
+        &--inactive {
+            path {
+                fill: #C4C4C4;
+            }
+        }
+    }
+    &__window {
+        overflow: hidden;
+        padding-top: 55px;
+        padding-left: 20px;
+        &--mob {
+            display: none;
+        }
+    }
+    &__interface {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+        &--mobile {
+            display: none;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+    &__field {
+        display: flex;
+        justify-content: space-between;
+        transition: 0.3s;
+    }
+}

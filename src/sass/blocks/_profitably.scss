@@ -1,0 +1,97 @@
+.profitably {
+    padding-top: 130px;
+    padding-bottom: 141px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__subtitle {
+        font-family: 'Gilroy Black', sans-serif;
+        font-size: 48px;
+        line-height: 60px;
+        margin-bottom: 108px;
+        text-transform: uppercase;
+        color: #FFDD2D;
+    }
+    &__items {
+        display: flex;
+    }
+    &__item {
+        position: relative;
+        background: url('../img/profitably/profitably-item-bg.png') top no-repeat;
+        width: 435px;
+        min-height: 561px;
+        padding: 30px;
+        margin-right: 106px;
+        &:last-child {
+            margin-right: 0;
+        }
+        &--one {
+            position: relative;
+            z-index: 1;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 194px;
+                height: 330px;
+                top: 21px;
+                right: -140px;
+                background: url('../img/profitably/profitably-item-before.png') center no-repeat;
+            }
+        }
+        &--two {
+            position: relative;
+            z-index: 2;
+            &::after {
+                content: '';
+                position: absolute;
+                left: -208px;
+                bottom: -75px;
+                width: 282px;
+                height: 281px;
+                background: url('../img/profitably/profitably-item-after.png') center no-repeat;
+                z-index: 3;
+            }
+        }
+    }
+    &__item-title {
+        font-family: 'Gilroy Black', sans-serif;
+        font-size: 36px;
+        line-height: 45px;
+        margin-bottom: 17px;
+        &--one {
+            color: #5C636B;
+        }
+        &--two {
+            color: #FFDD2D;
+        }
+    }
+    &__item-box {
+        margin-bottom: 40px;
+    }
+    &__item-text {
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 5px;
+        &--one {
+            font-family: 'Gilroy Black', sans-serif;
+            color: #5C636B;
+        }
+        &--two {
+            font-family: 'Gilroy Black', sans-serif;
+            color: #000000;  
+        }
+    }
+    &__item-descr {
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 50px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &--two {
+            margin-bottom: 31px;
+        }
+    }
+}
