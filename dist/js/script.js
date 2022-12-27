@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-        if (document.documentElement.clientWidth < 1200) {
+        // if (document.documentElement.innerWidth < 1200) {
             const menu = document.querySelector('.header__nav'),
                 menuItem = document.querySelectorAll('.header__menu-item'),
                 humburger = document.querySelector('.humburger');
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     menu.classList.toggle('header__nav_active');
                     document.body.style.overflow = menu.classList.contains('header__nav_active') ? 'hidden' : '';
                 }
-        }
+        // }
 
         const sumInput = document.querySelector('.calc__input--sum'),
             timeInput = document.querySelector('.calc__input--time'),
